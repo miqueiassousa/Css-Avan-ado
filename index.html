@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Avançados de CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Exemplos Avançados de CSS</h1>
+    </header>
+
+    <section class="secao-principal">
+        <h2>1. Variáveis CSS (Custom Properties)</h2>
+        <p class="multi-coluna">As variáveis permitem reutilizar valores como cores, tamanhos e espaçamentos ao longo do CSS, facilitando manutenção e personalização.</p>
+        <button class="variaveis-exemplo botao">Botão com Variáveis CSS</button>
+
+        <h2>2. Grid Layout</h2>
+        <p class="multi-coluna">O CSS Grid é uma poderosa ferramenta para criar layouts bidimensionais complexos, oferecendo controle sobre linhas e colunas de forma flexível.</p>
+        <div class="grid-container">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+        </div>
+
+        <h2>3. Flexbox</h2>
+        <p class="multi-coluna">O Flexbox simplifica a criação de layouts unidimensionais, permitindo o alinhamento e distribuição automática de elementos dentro de um contêiner flexível.</p>
+        <div class="flex-container">
+            <div class="flex-item">Item Flex 1</div>
+            <div class="flex-item">Item Flex 2</div>
+            <div class="flex-item">Item Flex 3</div>
+        </div>
+
+        <h2>4. Animações e Transições</h2>
+        <p class="multi-coluna">As transições suavizam mudanças entre valores de propriedades, e as animações permitem criar sequências de movimento ou efeitos ao longo do tempo.</p>
+        <div class="botao animado">Hover para animação</div>
+
+        <h2>5. Pseudo-elementos e Pseudo-classes</h2>
+        <p class="multi-coluna">Pseudo-elementos como ::before, ::after e pseudo-classes como :hover, :nth-child() ajudam a estilizar elementos com base em estado ou na sua posição.</p>
+        <p class="pseudo">Texto com pseudo-elemento ::before.</p>
+
+        <h2>6. Media Queries e Design Responsivo</h2>
+        <p class="multi-coluna">Media queries permitem criar layouts adaptativos para diferentes tamanhos de tela, essencial para design responsivo.</p>
+        <div class="media-query">
+            Redimensione a tela para ver o layout se ajustar!
+        </div>
+
+        <h2>7. CSS Shapes</h2>
+        <p class="multi-coluna">O recurso CSS Shapes permite criar layouts que seguem formas geométricas, como círculos ou polígonos, ao invés de retângulos tradicionais.</p>
+        <img src="https://via.placeholder.com/200" alt="Imagem circular" class="imagem-circular">
+
+        <h2>8. Clip-Path e Máscaras</h2>
+        <p class="multi-coluna">O clip-path permite recortar áreas de um elemento usando formas geométricas, enquanto o mask pode aplicar efeitos de máscara para revelar partes de um elemento.</p>
+        <div class="clip-path">Elemento com clip-path</div>
+
+        <h2>9. Filtros (Filter)</h2>
+        <p class="multi-coluna">O filter permite aplicar efeitos visuais como desfoque, contraste e saturação diretamente em imagens ou outros elementos.</p>
+        <img src="https://via.placeholder.com/200" alt="Imagem com filtro" class="imagem-filtro">
+
+        <h2>10. CSS Scroll Snap</h2>
+        <p class="multi-coluna">O Scroll Snap oferece controle sobre o comportamento de rolagem, permitindo que o conteúdo "trave" em pontos específicos ao rolar.</p>
+        <div class="scroll-container">
+            <div class="scroll-item">Item 1</div>
+            <div class="scroll-item">Item 2</div>
+            <div class="scroll-item">Item 3</div>
+        </div>
+
+        <h2>11. CSS Multi-Colunas</h2>
+        <p class="multi-coluna">A propriedade columns divide o conteúdo de um contêiner em múltiplas colunas, útil para layouts de texto, como jornais e revistas.</p>
+        <div class="multi-coluna">
+            Este texto está dividido em várias colunas para uma melhor organização do conteúdo em espaços largos.
+        </div>
+
+        <h2>12. Subgrid</h2>
+        <p class="multi-coluna">O Subgrid permite que um item de um grid herde a estrutura de colunas ou linhas do grid pai, facilitando layouts complexos.</p>
+        <div class="subgrid-container">
+            <div class="subgrid-item">Subgrid Item 1</div>
+            <div class="subgrid-item">Subgrid Item 2</div>
+        </div>
+
+        <h2>13. CSS Contain (Containment)</h2>
+        <p class="multi-coluna">O contain melhora a performance ao limitar o impacto de um elemento nos cálculos de layout de outros elementos.</p>
+        <div class="contain-exemplo">
+            Este elemento utiliza containment para melhorar a performance.
+        </div>
+
+        <h2>14. CSS Houdini</h2>
+        <p class="multi-coluna">CSS Houdini é uma API experimental que permite criar novas funcionalidades CSS personalizadas, como propriedades e layouts, utilizando JavaScript.</p>
+        <p>Houdini exige configuração adicional em ambiente de desenvolvimento, este é um placeholder.</p>
+
+        <h2>15. Backdrop Filter</h2>
+        <p class="multi-coluna">A propriedade backdrop-filter aplica efeitos visuais (como blur) ao fundo do elemento, geralmente usado para criar efeitos de vidro fosco.</p>
+        <div class="backdrop">
+            Fundo com efeito de desfoque.
+        </div>
+
+        <h2>16. Grid Áreas com Nomes</h2>
+        <p class="multi-coluna">No CSS Grid, é possível dar nomes a áreas específicas da grade, permitindo um posicionamento ainda mais intuitivo.</p>
+        <div class="grid-completo">
+            <div class="header">Header</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="main">Main Content</div>
+            <div class="footer">Footer</div>
+        </div>
+
+        <h2>17. CSS Logical Properties</h2>
+        <p class="multi-coluna">Essas propriedades permitem criar layouts que se adaptam automaticamente à direção de escrita (LTR ou RTL).</p>
+        <div class="logical">
+            Este elemento usa propriedades lógicas CSS.
+        </div>
+    </section>
+</body>
+</html>

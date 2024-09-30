@@ -1,0 +1,177 @@
+/* Variáveis CSS */
+:root {
+    --cor-primaria: #3498db;
+    --espacamento: 16px;
+    --filtro-blur: blur(5px);
+    --filtro-brilho: brightness(80%);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: var(--espacamento);
+    text-align: center;
+}
+
+/* Botão com Variáveis */
+.botao {
+    background-color: var(--cor-primaria);
+    padding: var(--espacamento);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #2c81ba;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #f1c40f;
+    padding: var(--espacamento);
+    text-align: center;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--espacamento) 0;
+}
+
+.flex-item {
+    background-color: #2ecc71;
+    padding: var(--espacamento);
+}
+
+/* Animação */
+.animado {
+    transition: transform 0.3s ease;
+}
+
+.animado:hover {
+    transform: scale(1.1);
+}
+
+/* Pseudo-elementos */
+.pseudo::before {
+    content: '🔔 ';
+    font-size: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CSS Shapes */
+.imagem-circular {
+    float: left;
+    shape-outside: circle(50%);
+    width: 200px;
+    height: 200px;
+    margin-right: var(--espacamento);
+}
+
+/* Clip-Path */
+.clip-path {
+    width: 200px;
+    height: 200px;
+    background-color: #e74c3c;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+/* Filtros */
+.imagem-filtro {
+    filter: var(--filtro-blur) var(--filtro-brilho);
+}
+
+/* Scroll Snap */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: var(--espacamento);
+}
+
+.scroll-item {
+    flex: 0 0 200px;
+    background-color: #9b59b6;
+    scroll-snap-align: center;
+    text-align: center;
+    padding: var(--espacamento);
+}
+
+/* Multi-colunas */
+.multi-coluna {
+    columns: 2;
+    column-gap: 20px;
+}
+
+/* Subgrid */
+.subgrid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.subgrid-item {
+    background-color: #8e44ad;
+    padding: var(--espacamento);
+}
+
+/* Contain */
+.contain-exemplo {
+    contain: layout style paint;
+    padding: var(--espacamento);
+    background-color: #f39c12;
+}
+
+/* Backdrop Filter */
+.backdrop {
+    width: 300px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: var(--espacamento);
+    margin-top: var(--espacamento);
+}
+
+/* Grid Áreas com Nomes */
+.grid-completo {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    gap: var(--espacamento);
+}
+
+.header {
+    grid-area: header;
+    background-color: #e67e22;
+    padding: var(--espacamento);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #2980b9;
+    padding: var(--espacamento);
+}
+
+.main {
+    grid-area: main;
+}
